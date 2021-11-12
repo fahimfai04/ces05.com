@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function login(form){userid=new Array("akassh");
+		pwd=new Array("234516");
+		page="Profile/homepage"+".html";
+		if(form.userid.value==userid[0] && form.pwd.value==pwd[0] ||
+			form.userid.value==userid[1] && form.pwd.value==pwd[1] ||
+			form.userid.value==userid[2] && form.pwd.value==pwd[2] ||
+			form.userid.value==userid[3] && form.pwd.value==pwd[3] ||
+			form.userid.value==userid[4] && form.pwd.value==pwd[4] ||
+			form.userid.value==userid[5] && form.pwd.value==pwd[5] ||
+			form.userid.value==userid[6] && form.pwd.value==pwd[6] ||
+			form.userid.value==userid[7] && form.pwd.value==pwd[7] ||
+			form.userid.value==userid[8] && form.pwd.value==pwd[8])
+			{self.location.href=page;}else{alert("either the userid or pwd you entered is incorrect.\nPlease try again.");form.userid.focus();}return true;}
+	</script>
+</head>
+<body bgcolor="#eeeeee">
+<form class="login-form">
+<center>
+<h2>
+<div class="imgcontainer">
+    <img src="demo-logo.png" alt="Avatar" class="avatar">
+  </div>
+<div class="container">
+    <div class="upt">USERNAME:</div>
+    <input type="text" name="userid" placeholder="Enter Username" style=onFocus="this.style.background='#ffffff';"
+	onBlur="this.style." required><br>
+
+	  <div class="upt">PASSWORD:</div>
+    <input type="password" name="pwd" placeholder="Enter Password" style=onFocus="this.style.background='#ffffff';"
+	onBlur="this.style.;" required><br>
+	
+	<input class="button" type="button" value="login" onclick="login(this.form);"
+	style=onMouseOver ="this.style."
+	onMouseOut ="this.style." onFocusr="this.style."><br>
+	
+   <span class="psw">Not yet a Member?<a href="#"><b>Register</b></a></span>
+  </div>
+  </div>
+  </h2>
+  </center>
+  </form>
+</body>
+</html>
